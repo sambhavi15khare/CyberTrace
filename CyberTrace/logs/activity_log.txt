@@ -1,0 +1,14 @@
+[2026-05-20 20:40:33]ALERT - File Created:./test_folder\hello.txt
+[2026-05-20 20:43:49]WARNING - File Deleted:./test_folder\hello.txt
+[2026-05-20 20:48:35]ALERT - File Created:./test_folder\hello.txt
+[2026-05-20 20:54:01]WARNING - File Deleted:./test_folder\hello.txt
+[2026-05-26 14:16:45]WARNING - File Deleted:./test_folder\HELLO.TXT
+[2026-05-26 14:28:45]ALERT - File Created:./test_folder\hello.txt
+[2026-05-26 14:28:45]WARNING - File Created:./test_folder\hello.txt
+[2026-05-26 14:30:30]WARNING - File Deleted:./test_folder\sam.txt
+[2026-05-26 14:31:20]ALERT - File Created:./test_folder\sam.txt
+[2026-05-26 14:31:20]WARNING - File Created:./test_folder\sam.txt
+[2026-05-26 14:34:59]WARNING - File Deleted:./test_folder\sam.txt
+[2026-05-26 14:35:14]ALERT - File Created:./test_folder\hello.txt
+[2026-05-26 14:35:14]WARNING - File Created:./test_folder\hello.txt
+[2026-05-26 14:37:58]WARNING - File Deleted:./test_folder\hello.txt
