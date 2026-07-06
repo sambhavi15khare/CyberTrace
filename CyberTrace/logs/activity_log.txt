@@ -12,3 +12,181 @@
 [2026-05-26 14:35:14]ALERT - File Created:./test_folder\hello.txt
 [2026-05-26 14:35:14]WARNING - File Created:./test_folder\hello.txt
 [2026-05-26 14:37:58]WARNING - File Deleted:./test_folder\hello.txt
+[2026-06-02 22:34:57]WARNING - File Deleted->test_folder\HELLO.txt
+[2026-06-03 21:17:23]INFO - File Created->test_folder\hello.txt
+[2026-06-03 21:20:29]WARNING - File Deleted->test_folder\hello.txt
+[2026-06-05 19:28:42] [INFO] File Created -> test_folder\hello.txt
+[2026-06-05 19:28:42]INFO - File Created->test_folder\hello.txt
+[2026-06-05 19:36:57] [WARNING] File Deleted -> test_folder\hello.txt
+[2026-06-05 19:36:57]WARNING - File Deleted->test_folder\hello.txt
+[2026-06-05 19:53:19]INFO - File Created->test_folder\hello.txt
+[2026-06-05 20:04:38] [INFO] File Created -> test_folder\abc.txt
+[2026-06-05 20:04:38]INFO - File Created->test_folder\abc.txt
+[2026-06-05 20:17:47] [INFO] File Created -> test_folder\test2.txt
+[2026-06-05 20:17:47]INFO - File Created->test_folder\test2.txt
+[2026-06-18 18:09:37] [INFO] File Created -> test_folder\sam.txt (e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855)
+[2026-06-18 18:09:59] [WARNING] File Deleted -> test_folder\sam.txt (None)
+[2026-06-18 18:16:49] [WARNING] File Deleted -> test_folder\abc.txt (None)
+[2026-06-18 18:16:49] [WARNING] File Deleted -> test_folder\abc.txt (None)
+[2026-06-18 18:17:46] [INFO] File Created -> test_folder\abc.txt (e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855)
+[2026-06-18 18:17:46] [INFO] File Created -> test_folder\abc.txt (e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855)
+[2026-06-18 18:20:34] [INFO] File Modified -> test_folder\abc.txt (7d1a54127b222502f5b79b5fb0803061152a44f92b37e23c6527baf665d4da9a)
+[2026-06-18 18:20:34] [INFO] File Modified -> test_folder\abc.txt (7d1a54127b222502f5b79b5fb0803061152a44f92b37e23c6527baf665d4da9a)
+[2026-06-18 18:20:34] [INFO] File Modified -> test_folder\abc.txt (7d1a54127b222502f5b79b5fb0803061152a44f92b37e23c6527baf665d4da9a)
+[2026-06-18 18:20:34] [INFO] File Modified -> test_folder\abc.txt (7d1a54127b222502f5b79b5fb0803061152a44f92b37e23c6527baf665d4da9a)
+[2026-06-18 21:50:49] [INFO] File Modified -> test_folder\abc.txt (e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855)
+[2026-06-18 22:00:23] [INFO] File Modified -> test_folder\abc.txt (7d1a54127b222502f5b79b5fb0803061152a44f92b37e23c6527baf665d4da9a)
+[2026-06-18 22:00:23] [INFO] File Modified -> test_folder\abc.txt (7d1a54127b222502f5b79b5fb0803061152a44f92b37e23c6527baf665d4da9a)
+[2026-06-19 18:36:06] [INFO] File Modified -> test_folder\abc.txt (3ddb7cffe21964c54f62ea0a85cf29ff2578d7be8f6378020f038aa70c2c1231)
+[2026-06-19 18:36:06] [INFO] File Modified -> test_folder\abc.txt (3ddb7cffe21964c54f62ea0a85cf29ff2578d7be8f6378020f038aa70c2c1231)
+[2026-06-20 17:23:18] [INFO] File Modified -> test_folder\hello.txt (4881142ca2888683413ddd884aba7f3732dff9b82e90d3fbccbb888d0f36dcb7)
+[2026-06-20 18:08:31] [INFO] File Modified -> C:\Users\lenovo\OneDrive\Documents\Sambhavi Khare resume.docx (76dfbadbaf8df2e8b23a7344c62ee6c11430655204475084df49dc11f3bae281)
+[2026-06-20 18:09:04] [INFO] File Modified -> C:\Users\lenovo\OneDrive\Documents\lockscreen wallpaper.jpg (e7218fc7c37dc4bd040972ff1f724e9d7166ffb11a89939cbefaa3c466135b6a)
+[2026-06-20 18:24:37] [INFO] File Modified -> C:\Users\lenovo\OneDrive\Documents\test.txt (7d8c01be2060f8aeb53160397154dd79ded4dbce0765d348d36840835e08fc11)
+[2026-06-20 18:24:39] [INFO] File Modified -> C:\Users\lenovo\OneDrive\Documents\test.txt (7d8c01be2060f8aeb53160397154dd79ded4dbce0765d348d36840835e08fc11)
+[2026-06-22 17:03:41] [INFO] File Modified -> C:\Users\lenovo\OneDrive\Documents\desktop.ini (954b525be189a7fee40084bce8a1d9380280d109d64695e0c09b940c708aa274)
+[2026-06-22 18:04:14] [INFO] File Modified -> C:\Users\lenovo\OneDrive\Documents\desktop.ini (954b525be189a7fee40084bce8a1d9380280d109d64695e0c09b940c708aa274)
+[2026-06-22 18:37:26] [INFO] File Modified -> C:\Users\lenovo\OneDrive\Documents\desktop.ini (954b525be189a7fee40084bce8a1d9380280d109d64695e0c09b940c708aa274)
+[2026-06-23 19:52:54] [INFO] File Modified -> C:\Users\lenovo\OneDrive\Documents\desktop.ini (954b525be189a7fee40084bce8a1d9380280d109d64695e0c09b940c708aa274)
+[2026-06-23 21:07:36] [INFO] File Modified -> C:\Users\lenovo\OneDrive\Documents\desktop.ini (954b525be189a7fee40084bce8a1d9380280d109d64695e0c09b940c708aa274)
+[2026-06-23 22:11:48] [INFO] File Modified -> C:\Users\lenovo\OneDrive\Documents\desktop.ini (954b525be189a7fee40084bce8a1d9380280d109d64695e0c09b940c708aa274)
+
+============================================================
+Timestamp   : 2026-07-05 18:04:28
+Event       : File Modified
+Level       : INFO
+Path        : C:\Users\lenovo\OneDrive\Documents\assignment6.docx
+SHA-256     : a35fa194ed1005c6fe2e43695d15e2170a061936c96ee6dff8f00e2ed4e07b4e
+Risk Score  : 3
+Severity    : INFO
+============================================================
+
+============================================================
+Timestamp   : 2026-07-06 00:23:03
+Event       : File Deleted
+Level       : WARNING
+Path        : C:\Users\lenovo\OneDrive\Documents\aashi.xlsx
+SHA-256     : None
+Risk Score  : 15
+Severity    : INFO
+============================================================
+
+============================================================
+Timestamp   : 2026-07-06 17:56:20
+Event       : File Deleted
+Level       : WARNING
+Path        : C:\Users\lenovo\OneDrive\Documents\bsp result.docx
+SHA-256     : None
+Risk Score  : 15
+Severity    : INFO
+============================================================
+
+============================================================
+Timestamp   : 2026-07-06 17:56:47
+Event       : File Created
+Level       : INFO
+Path        : C:\Users\lenovo\OneDrive\Documents\New Google Docs.gdoc
+SHA-256     : e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+Risk Score  : 5
+Severity    : INFO
+============================================================
+
+============================================================
+Timestamp   : 2026-07-06 17:56:47
+Event       : File Deleted
+Level       : WARNING
+Path        : C:\Users\lenovo\OneDrive\Documents\New Google Docs.gdoc
+SHA-256     : None
+Risk Score  : 15
+Severity    : INFO
+============================================================
+
+============================================================
+Timestamp   : 2026-07-06 18:06:32
+Event       : File Modified
+Level       : INFO
+Path        : C:\Users\lenovo\OneDrive\Documents\Sambhavi Khare resume.docx
+SHA-256     : 76dfbadbaf8df2e8b23a7344c62ee6c11430655204475084df49dc11f3bae281
+Risk Score  : 3
+Severity    : INFO
+============================================================
+
+============================================================
+Timestamp   : 2026-07-06 18:06:40
+Event       : File Modified
+Level       : INFO
+Path        : C:\Users\lenovo\OneDrive\Documents\Impact and benefits.pptx
+SHA-256     : afb2ad54febdadec73d89c378779a4298557ad2d4d39cb8216d5a35e06b8e95d
+Risk Score  : 3
+Severity    : INFO
+============================================================
+
+============================================================
+Timestamp   : 2026-07-06 18:06:44
+Event       : File Deleted
+Level       : WARNING
+Path        : C:\Users\lenovo\OneDrive\Documents\Impact and benefits.pptx
+SHA-256     : None
+Risk Score  : 15
+Severity    : INFO
+============================================================
+
+============================================================
+Timestamp   : 2026-07-06 18:08:01
+Event       : File Deleted
+Level       : WARNING
+Path        : C:\Users\lenovo\OneDrive\Documents\sam
+SHA-256     : None
+Risk Score  : 15
+Severity    : INFO
+============================================================
+
+============================================================
+Timestamp   : 2026-07-06 18:09:03
+Event       : File Renamed/Moved
+Level       : INFO
+Path        : C:\Users\lenovo\OneDrive\Documents\bsp.docx
+SHA-256     : None
+Risk Score  : 0
+Severity    : INFO
+============================================================
+
+============================================================
+Timestamp   : 2026-07-06 18:09:03
+Event       : File Modified
+Level       : INFO
+Path        : C:\Users\lenovo\OneDrive\Documents\bsp.docx
+SHA-256     : 59e268793fa5cc032f0523268b85a573b7b5775837693301d58a1690b253aef2
+Risk Score  : 3
+Severity    : INFO
+============================================================
+
+============================================================
+Timestamp   : 2026-07-06 18:09:06
+Event       : File Modified
+Level       : INFO
+Path        : C:\Users\lenovo\OneDrive\Documents\bsp.docx
+SHA-256     : 59e268793fa5cc032f0523268b85a573b7b5775837693301d58a1690b253aef2
+Risk Score  : 3
+Severity    : INFO
+============================================================
+
+============================================================
+Timestamp   : 2026-07-06 18:14:07
+Event       : File Deleted
+Level       : WARNING
+Path        : C:\Users\lenovo\OneDrive\Documents\sam
+SHA-256     : None
+Risk Score  : 15
+Severity    : INFO
+============================================================
+
+============================================================
+Timestamp   : 2026-07-06 18:17:13
+Event       : File Created
+Level       : INFO
+Path        : D:\New Microsoft Word Document.docx
+SHA-256     : None
+Risk Score  : 5
+Severity    : LOW
+============================================================

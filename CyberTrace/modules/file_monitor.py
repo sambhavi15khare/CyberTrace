@@ -5,16 +5,59 @@ import time
 from modules.logger import write_log
 from modules.alerts import send_alert
 
+from modules.risk_engine import calculate_risk
+
+SUSPICIOUS_EXTENSIONS = [
+    ".exe",
+    ".bat",
+    ".vbs",
+    ".ps1",
+    ".dll"
+]
+
 
 class MonitorHandler(FileSystemEventHandler):
+    def process_event(self, level, event_type, file_path):
+
+        score, severity, reasons = calculate_risk(
+            event_type,
+            file_path
+        )
+
+        write_log(
+            level,
+            event_type,
+            file_path,
+            score,
+            severity,
+            reasons
+        )
+
+        print("\n========== CyberTrace Risk Analysis ==========")
+        print(f"Risk Score : {score}")
+        print(f"Severity   : {severity}")
+
+        print("\nReasons:")
+
+        for reason in reasons:
+            print(f"• {reason}")
+
+        print("=============================================\n")
+
+        print("-" * 35)
+    def __init__(self):
+        super().__init__()
+        self.last_modified={}
 
     def on_created(self, event):
+        print(f"File Created: {event.src_path}")
 
         if event.is_directory:
             return
 
-        write_log(
-            "INFO - File Created",
+        self.process_event(
+            "INFO",
+            "File Created",
             event.src_path
         )
 
@@ -23,26 +66,34 @@ class MonitorHandler(FileSystemEventHandler):
             f"File Created: {event.src_path}"
         )
 
-        # Detect executable files
-        if event.src_path.endswith(".exe"):
+        file_path = event.src_path
 
-            write_log(
-                "CRITICAL - Executable File Detected",
-                event.src_path
-            )
+        for extension in SUSPICIOUS_EXTENSIONS:
 
-            send_alert(
-                "CyberTrace Critical Alert",
-                f"Executable File Detected:\n{event.src_path}"
-            )
+            if file_path.endswith(extension):
+
+                write_log(
+                    "CRITICAL",
+                    "Suspicious File Detected",
+                    file_path
+                )
+
+                send_alert(
+                    "CyberTrace Critical Alert",
+                    f"Suspicious File Detected:\n{file_path}"
+                )
+
+                break
 
     def on_deleted(self, event):
+        print(f"File Deleted: {event.src_path}")
 
         if event.is_directory:
             return
 
-        write_log(
-            "WARNING - File Deleted",
+        self.process_event(
+            "WARNING",
+            "File Deleted",
             event.src_path
         )
 
@@ -52,31 +103,39 @@ class MonitorHandler(FileSystemEventHandler):
         )
 
     def on_modified(self, event):
+        print(f"File Modified: {event.src_path}")
 
         if event.is_directory:
             return
 
-        write_log(
-            "INFO - File Modified",
-            event.src_path
-        )
+        current_time = time.time()
 
-        send_alert(
-            "CyberTrace Alert",
-            f"File Modified: {event.src_path}"
-        )
+        if event.src_path in self.last_modified:
+
+            if current_time - self.last_modified[event.src_path] < 2:
+                return
+
+        self.last_modified[event.src_path] = current_time
+        self.process_event(
+                "INFO",
+                "File Modified",
+                event.src_path
+            )
+
+       # send_alert(
+        #        "CyberTrace Alert",
+         #       f"File Modified: {event.src_path}"
+         #   )
 
     def on_moved(self, event):
 
         if event.is_directory:
             return
 
-        print("MOVE EVENT DETECTED")
-
-        write_log(
-            "INFO - File Renamed/Moved",
-            f"{event.src_path} -> {event.dest_path}"
-        )
+        self.process_event(
+            "INFO",
+            "File Renamed/Moved",
+            event.dest_path)
 
         send_alert(
             "CyberTrace Warning",
